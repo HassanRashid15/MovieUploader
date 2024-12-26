@@ -1,0 +1,62 @@
+body {
+  background-color: #111;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #111 !important;
+  padding: 20px 30px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-grid {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.movie-grid img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-body {
+  font-size: 18px;
+}
+
+#playButton {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 80px;
+}

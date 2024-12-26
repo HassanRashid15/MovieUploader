@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie WebApp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MovieWeb</a>
+      <div class="d-flex">
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" class="form-control" placeholder="Search for movies..." aria-label="Search" aria-describedby="search-addon">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Featured Movies Carousel -->
+  <div id="featured-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" id="carousel-inner"></div>
+  </div>
+
+  <!-- Movie Grid -->
+  <div class="container my-5">
+    <h2 class="text-center text-white">Popular Movies</h2>
+    <div class="row" id="movie-list"></div>
+  </div>
+
+  <!-- Movie Details Modal -->
+  <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="movieModalLabel">Movie Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img id="moviePoster" class="img-fluid" alt="Movie Poster">
+            </div>
+            <div class="col-md-6">
+              <h5 id="movieOverview"></h5>
+              <p><strong>Release Date:</strong> <span id="movieReleaseDate"></span></p>
+              <button id="playButton" class="btn btn-primary">Watch Trailer</button>
+              <!-- Full movie or trailer message -->
+              <p id="movieDetailsMessage" class="text-muted mt-3"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+</html>
